@@ -1,0 +1,62 @@
+﻿@page
+@model EverCleanDbSystem.Pages.Suppliers.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div class="add-screen">
+<h4>Create a new Supplier</h4>
+<hr />
+<div class="row">
+    <div class="">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row input-group-mod">
+                <div class="col-md-1">
+                     <label asp-for="Supplier.Code" class="control-label"></label>
+                 </div>
+                 <div class="col-md-6">
+                <input asp-for="Supplier.Code" class="form-control" />
+                <span asp-validation-for="Supplier.Code" class="text-danger"></span>
+                    </div>
+            </div>
+                <div class="row input-group-mod">
+                    <div class="col-md-1">
+                <label asp-for="Supplier.Name" class="control-label"></label>
+                    </div>
+                    <div class="col-md-6">
+                <input asp-for="Supplier.Name" class="form-control" />
+                <span asp-validation-for="Supplier.Name" class="text-danger"></span>
+                    </div>
+            </div>
+                <div class="row input-group-mod">
+                    <div class="col-md-1">
+                <label asp-for="Supplier.Telelphone" class="control-label"></label>
+                    </div>
+                    <div class="col-md-6">
+                <input asp-for="Supplier.Telelphone" class="form-control" />
+                <span asp-validation-for="Supplier.Telelphone" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row input-group-mod">
+                    <div class ="col-md-1"> </div>
+                    <div class= "col-md-6">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                    <a class="btn btn-primary" asp-page="Index">Cancel</a>
+            </div>
+                </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    
+</div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

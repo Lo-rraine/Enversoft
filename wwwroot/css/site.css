@@ -1,0 +1,88 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+
+    margin-bottom: 60px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Welcome Index*/
+.service-32 {
+    margin-top: 10%;
+}
+
+.service-32 p {
+    font-size: 18px;
+}
+
+.service-32 .btn-info-gradiant {
+    background: #188ef4;
+    background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+    background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+    border: 0px;
+    color: #ffffff;
+}
+
+    .service-32 .btn-info-gradiant:hover {
+        background: #316ce8;
+        background: -webkit-linear-gradient(legacy-direction(to right), #316ce8 0%, #188ef4 100%);
+        background: -webkit-gradient(linear, left top, right top, from(#316ce8), to(#188ef4));
+        background: -webkit-linear-gradient(left, #316ce8 0%, #188ef4 100%);
+        background: -o-linear-gradient(left, #316ce8 0%, #188ef4 100%);
+        background: linear-gradient(to right, #316ce8 0%, #188ef4 100%);
+        color: #000000;
+    }
+
+.service-32 .btn-md {
+    padding: 15px 45px;
+    font-size: 16px;
+}
+
+/* Supplier Listing Screen */
+.listing-screen {
+    margin-top: 5%;
+}
+
+.listing-screen h1 {
+    text-align: center;
+}
+
+    .listing-screen form {
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    /* Add Supplier Screen*/
+.add-screen{
+    margin-top: 5%;
+}
+h4 {
+    margin-left: 9%;
+}
+.input-group-mod {
+    margin-top: 10px;
+}
