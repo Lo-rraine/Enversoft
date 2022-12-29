@@ -1,5 +1,5 @@
 # EverCleanDbSystem
 With Crud operations
-Azure database 
+Azure databased
 
 
